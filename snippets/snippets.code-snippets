@@ -1,0 +1,90 @@
+{
+	// Place your 全局 snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// 将您的全局片段放在这里。 每个片段都在片段名称下定义，并具有范围、前缀、正文和
+	// 描述。 在范围字段中添加代码段适用的语言的逗号分隔 ID。 如果范围
+	// 留空或省略，该代码片段将应用于所有语言。 前缀是什么
+	// 用于触发代码片段，正文将被展开和插入。 可能的变量有：
+	// $1、$2 表示制表位，$0 表示最终光标位置，${1:label}、${2:another} 表示占位符。
+	// 具有相同 id 的占位符被连接起来。
+	// Example:
+	"Print to console": {
+		"prefix": "log",
+		"body": [
+			"console.log('${1://body}');",
+			"$2"
+		],
+		"description": "Log output to console"
+	},
+	"forEach": {
+		"prefix": "fe",
+		"body": [
+		  "${1:array}.forEach(function(item) {",
+		  "\t${2:// body}",
+		  "});"
+		],
+		"description": "Code snippet for 'forEach'"
+	},
+	"setTimeout": {
+		"prefix": "st",
+		"body": [
+		  "setTimeout(function() {",
+		  "\t${0:// body}",
+		  "}, ${1:1000});"
+		],
+		"description": "Code snippet for 'setTimeout'"
+	},
+    "component": {
+        "prefix": "component",
+        "body": [
+          "import React, { useRef, useState, useEffect } from 'react';",
+          "",
+          "export interface IProps {",
+          "    ",
+          "}",
+          "",
+          "const  : React.FC= (props: IProps) => {",
+          "    const { } = props;",
+          "",
+          "    return (",
+          "        <div className=\"component-\">",
+          "            ",
+          "        </div>",
+          "    );",
+          "};",
+          "",
+          "export default  ;"
+        ],
+        "description": "test生成模板组件"
+      },
+	// "component": {
+	// 	"prefix": [
+	// 	 "component"
+	// 	],
+	// 	"body": [
+	// 	 "import React, { useRef, useState, useEffect } from 'react';",
+	// 	 "",
+	// 	 "export interface IProps {",
+	// 	 "\t${1}",
+	// 	 "}",
+	// 	 "",
+	// 	 "const ${2}: React.FC= (props: IProps) => {",
+	// 	 "\tconst { } = props;",
+	// 	 "",
+	// 	 "\treturn (",
+	// 	 "\t\t<div className=\"component-$3\">",
+	// 	 "\t\t\t$4",
+	// 	 "\t\t</div>",
+	// 	 "\t);",
+	// 	 "};",
+	// 	 "",
+	// 	 "export default ${2};",
+	// 	 "",
+	// 	],
+	// 	"description": "生成组件模版"
+	// },
+}

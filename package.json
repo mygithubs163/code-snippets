@@ -1,0 +1,50 @@
+{
+  "name": "code-snippets",
+  "displayName": "code-snippets",
+  "publisher": "vscodepluginerchengzi",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.84.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/snippets.code-snippets"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/snippets.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/snippets.code-snippets"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "hello-world",
+        "key": "ctrl+f10",
+        "mac": "cmd+f10",
+        "when": "editorFocus"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "hello-world",
+          "group": "navigation", 
+          "when": "explorerResourceIsFolder" 
+        }
+      ]
+    }
+  }
+}

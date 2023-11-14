@@ -10,7 +10,14 @@
   "categories": [
     "Snippets"
   ],
+  "activationEvents": [],
   "contributes": {
+    "commands": [
+      {
+        "command": "code-snippets",
+        "title": "Code Snippets Template"
+      }
+    ],
     "snippets": [
       {
         "language": "javascript",
@@ -31,7 +38,7 @@
     ],
     "keybindings": [
       {
-        "command": "hello-world",
+        "command": "code-snippets",
         "key": "ctrl+f10",
         "mac": "cmd+f10",
         "when": "editorFocus"
@@ -40,7 +47,7 @@
     "menus": {
       "explorer/context": [
         {
-          "command": "hello-world",
+          "command": "code-snippets",
           "group": "navigation", 
           "when": "explorerResourceIsFolder" 
         }
